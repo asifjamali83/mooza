@@ -2690,7 +2690,7 @@ def LINE_FAST_USER(arif):
                         elif 'say-id: ' in dpkText.lower():
                             if user in DpkFamily or user in Wait["Admin"]:
                                 try:i
-                                    isi = dpkText.lower().replace('say-id: ','')
+                                   # isi = dpkText.lower().replace('say-id: ','')
                                     tts = gTTS(text=isi, lang='id', slow=False)
                                     tts.save('temp.mp3')
                                     cl.sendAudio(kirim, 'temp.mp3')
@@ -2700,7 +2700,7 @@ def LINE_FAST_USER(arif):
                         elif 'say-en: ' in dpkText.lower():
                             if user in DpkFamily or user in Wait["Admin"]:
                                 try:
-                                    isi = dpkText.lower().replace('say-en: ','')
+                                 #   isi = dpkText.lower().replace('say-en: ','')
                                     tts = gTTS(text=isi, lang='en', slow=False)
                                     tts.save('temp.mp3')
                                     cl.sendAudio(kirim, 'temp.mp3')
@@ -2710,7 +2710,7 @@ def LINE_FAST_USER(arif):
                         elif 'say-jp: ' in dpkText.lower():
                             if user in DpkFamily or user in Wait["Admin"]:
                                 try:
-                                    isi = dpkText.lower().replace('say-jp: ','')
+                                  #  isi = dpkText.lower().replace('say-jp: ','')
                                     tts = gTTS(text=isi, lang='ja', slow=False)
                                     tts.save('temp.mp3')
                                     cl.sendAudio(kirim, 'temp.mp3')
@@ -2720,7 +2720,7 @@ def LINE_FAST_USER(arif):
                         elif 'say-ar: ' in dpkText.lower():
                             if user in DpkFamily or user in Wait["Admin"]:
                                 try:
-                                    isi = dpkText.lower().replace('say-ar: ','')
+                              #      isi = dpkText.lower().replace('say-ar: ','')
                                     tts = gTTS(text=isi, lang='ar', slow=False)
                                     tts.save('temp.mp3')
                                     cl.sendAudio(kirim, 'temp.mp3')
@@ -2730,7 +2730,7 @@ def LINE_FAST_USER(arif):
                         elif 'say-ko: ' in dpkText.lower():
                             if user in DpkFamily or user in Wait["Admin"]:
                                 try:
-                                    isi = dpkText.lower().replace('say-ko: ','')
+                            #        isi = dpkText.lower().replace('say-ko: ','')
                                     tts = gTTS(text=isi, lang='ko', slow=False)
                                     tts.save('temp.mp3')
                                     cl.sendAudio(kirim, 'temp.mp3')
@@ -2817,77 +2817,77 @@ def LINE_FAST_USER(arif):
 
 #--------------------------------- TRANSLATOR -------------------------------------------------#
 
-#                        elif dpkText.lower().startswith("indonesian: "):
-  #                          if user in DpkFamily or user in Wait["Admin"]:
-    #                            sep = dpkText.split(" ")
-      #                          isi = dpkText.replace(sep[0] + " ","")
-        #                        translator = Translator()
-          #                      hasil = translator.translate(isi, dest='id')
-             #                   text = hasil.text
-                #                cl.sendMessage(kirim, "Translator Indonesian\n\n" + str(text))
+                        elif dpkText.lower().startswith("indonesian: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='id')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Indonesian\n\n" + str(text))
 
- #                       elif dpkText.lower().startswith("english: "):
-#                            if user in DpkFamily or user in Wait["Admin"]:
-#                                sep = dpkText.split(" ")
- #                               isi = dpkText.replace(sep[0] + " ","")
-  #                              translator = Translator()
-  #                              hasil = translator.translate(isi, dest='en')
-  #                              text = hasil.text
-  #                              cl.sendMessage(kirim, "Translator English\n\n" + str(text))
+                        elif dpkText.lower().startswith("english: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='en')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator English\n\n" + str(text))
 
-   #                     elif dpkText.lower().startswith("korea: "):
-    #                        if user in DpkFamily or user in Wait["Admin"]:
-      #                              sep = dpkText.split(" ")
-        #                            isi = dpkText.replace(sep[0] + " ","")
-         #                           translator = Translator()
-           #                         hasil = translator.translate(isi, dest='ko')
-              #                      text = hasil.text
-               #                     cl.sendMessage(kirim, "Translator Korea\n\n" + str(text))
+                        elif dpkText.lower().startswith("korea: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                    sep = dpkText.split(" ")
+                                    isi = dpkText.replace(sep[0] + " ","")
+                                    translator = Translator()
+                                    hasil = translator.translate(isi, dest='ko')
+                                    text = hasil.text
+                                    cl.sendMessage(kirim, "Translator Korea\n\n" + str(text))
 
-   #                     elif dpkText.lower().startswith("japan: "):
-   #                         if user in DpkFamily or user in Wait["Admin"]:
-  #                              sep = dpkText.split(" ")
-    #                            isi = dpkText.replace(sep[0] + " ","")
-   #                             translator = Translator()
-   #                             hasil = translator.translate(isi, dest='ja')
-    #                            text = hasil.text
-     #                           cl.sendMessage(kirim, "Translator Japan\n\n" + str(text))
+                        elif dpkText.lower().startswith("japan: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='ja')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Japan\n\n" + str(text))
 
-     #                   elif dpkText.lower().startswith("thailand: "):
-      #                      if user in DpkFamily or user in Wait["Admin"]:
-       #                         sep = dpkText.split(" ")
-          #                      isi = dpkText.replace(sep[0] + " ","")
-           #                     translator = Translator()
-            #                    hasil = translator.translate(isi, dest='th')
-             #                   text = hasil.text
-              #                  cl.sendMessage(kirim, "Translator Thailand\n\n" + str(text))
+                        elif dpkText.lower().startswith("thailand: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='th')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Thailand\n\n" + str(text))
 
- #                       elif dpkText.lower().startswith("arab: "):
- #                           if user in DpkFamily or user in Wait["Admin"]:
-#                                sep = dpkText.split(" ")
-#                                isi = dpkText.replace(sep[0] + " ","")
-   #                             translator = Translator()
-       #                         hasil = translator.translate(isi, dest='ar')
-     #                           text = hasil.text
-    #                            cl.sendMessage(kirim, "Translator Saudi Arabia\n\n" + str(text))
+                        elif dpkText.lower().startswith("arab: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='ar')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Saudi Arabia\n\n" + str(text))
 
-     #                   elif dpkText.lower().startswith("malaysia: "):
-         #                   if user in DpkFamily or user in Wait["Admin"]:
-           #                     sep = dpkText.split(" ")
-              #                  isi = dpkText.replace(sep[0] + " ","")
-                 #               translator = Translator()
-                  #              hasil = translator.translate(isi, dest='ms')
-                   #             text = hasil.text
-                    #            cl.sendMessage(kirim, "Translator Malaysia\n\n" + str(text))
+                        elif dpkText.lower().startswith("malaysia: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='ms')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Malaysia\n\n" + str(text))
 
-     #                   elif dpkText.lower().startswith("jawa: "):
-      #                      if user in DpkFamily or user in Wait["Admin"]:
-        #                        sep = dpkText.split(" ")
-          #                      isi = dpkText.replace(sep[0] + " ","")
-            #                    translator = Translator()
-            #                    hasil = translator.translate(isi, dest='jw')
-             #                   text = hasil.text
-               #                 cl.sendMessage(kirim, "Translator Jawa\n\n" + str(text))
+                        elif dpkText.lower().startswith("jawa: "):
+                            if user in DpkFamily or user in Wait["Admin"]:
+                                sep = dpkText.split(" ")
+                                isi = dpkText.replace(sep[0] + " ","")
+                                translator = Translator()
+                                hasil = translator.translate(isi, dest='jw')
+                                text = hasil.text
+                                cl.sendMessage(kirim, "Translator Jawa\n\n" + str(text))
 
     except Exception as error:
         print (error)
