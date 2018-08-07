@@ -47,7 +47,7 @@ Amid = line1.profile.mid
 Bmid = line2.profile.mid
 Cmid = line3.profile.mid
 DpkBot=[mid,Amid,Bmid,Cmid]
-Owner=["ud296655acef67cbd5e8208e63629f78b","u65224f4e8812136f01b25275a54b5aef"]
+Owner=["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
 DpkFamily = DpkBot + Dpk + Owner
 
 contact = cl.getProfile()
@@ -62,7 +62,7 @@ Wait = {
     "Contact":False,
     "GName":"ARIFISTIFIK",
     "AutoRespon":True,
-    "MentionText":"dîh ηgëtåg äķü mülü... Kămư kë§ëÞîåη ¥åk...???",
+    "MentionText":"เหมือนมึงเหงาอะ...😌",
     "KickRespon":False,
     "KillOn":False,
     "KickOn":False,
@@ -83,7 +83,7 @@ Wait = {
     "autoRead":False,
     "IDSticker":False,
     "Timeline":False,
-    "Welcome":False,
+    "Welcome":True,
     "BackupBot":True,
     "WcText": "Welcome My Friend",
     "Leave":False,
@@ -168,9 +168,9 @@ DpkCctv={
 
 Help ="""
 ╔═══════════════════
-╠☬➣  MËÑÜ ĦÉĹP  ☬➣  ⏩⏩
+╠☬➣  MËÑÜ ĦÉĹP  ☬➣
 ╠═══════════════════
-╠☬➣ [ ŤŘÅÑ$ĻĀŤØŘ ]⏩⏩⏩
+╠☬➣ [ ŤŘÅÑ$ĻĀŤØŘ ]
 ╠═══════════════════
 ╠☬➣ indonesian:
 ╠☬➣ english:
@@ -242,11 +242,11 @@ Help ="""
 ╠☬➣ mimiclist
 ╠☬➣ refresh
 ╠═══════════════════
-╠☬➣ [ GŘØƯP ÇŐMMÅÑÐ ]   ⏩
+╠☬➣ [ GŘØƯP ÇŐMMÅÑÐ ]
 ╠═══════════════════
 ╠☬➣ gcall
-╠☬➣ dpk join
-╠☬➣ dpk bye
+╠☬➣ max join
+╠☬➣ max bye
 ╠☬➣ bye me
 ╠☬➣ leaveall grup
 ╠☬➣ kick [on,off->kickall]
@@ -275,7 +275,7 @@ Help ="""
 ╠☬➣ cfotogrup [on/off]
 ╠☬➣ spaminvite [on/off]
 ╠═══════════════════
-╠☬➣ [ MËĐÏÄ ÇŐMMÅÑÐ ]   ⏩
+╠☬➣ [ MËĐÏÄ ÇŐMMÅÑÐ ]
 ╠═══════════════════
 ╠☬➣ topnews
 ╠☬➣ data birth:
@@ -297,7 +297,7 @@ Help ="""
 ╠☬➣ image:
 ╠☬➣ youtube:
 ╠═══════════════════
-╠☬➣  ƛƦƖƑƖƧƬƖƑƖƘ  ☬➣   ⏩⏩
+╠☬➣  ƛƦƖƑƖƧƬƖƑƖƘ  ☬➣
 ╚═══════════════════
 """""
 
@@ -1344,19 +1344,19 @@ def LINE_FAST_USER(arif):
                         elif dpkText.lower() == "speed":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 no = time.time()
-                                cl.sendText("udefd75736ced80dc8fca8966d246ac6f", ' ')
+                                cl.sendText("u2e9bdd3137a52476cc1065187beab5d7", ' ')
                                 elapsed_time = time.time() - no
                                 cl.sendText(kirim, "%s" % (elapsed_time))
                                 no1 = time.time()
-                                line1.sendText("udefd75736ced80dc8fca8966d246ac6f", ' ')
+                                line1.sendText("u2e9bdd3137a52476cc1065187beab5d7", ' ')
                                 elapsed_time = time.time() - no1
                                 line1.sendText(kirim, "%s" % (elapsed_time))
                                 no2 = time.time()
-                                line2.sendText("udefd75736ced80dc8fca8966d246ac6f", ' ')
+                                line2.sendText("u2e9bdd3137a52476cc1065187beab5d7", ' ')
                                 elapsed_time = time.time() - no2
                                 line2.sendText(kirim, "%s" % (elapsed_time))
                                 no3 = time.time()
-                                line3.sendText("udefd75736ced80dc8fca8966d246ac6f", ' ')
+                                line3.sendText("u2e9bdd3137a52476cc1065187beab5d7", ' ')
                                 elapsed_time = time.time() - no3
                                 line3.sendText(kirim, "%s" % (elapsed_time))
 
@@ -1366,7 +1366,7 @@ def LINE_FAST_USER(arif):
                                 team2 = line1.getContact(Amid).displayName
                                 team3 = line2.getContact(Bmid).displayName
                                 team4 = line3.getContact(Cmid).displayName
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u2e9bdd3137a52476cc1065187beab5d7"
                                 cl.mentionWithDPK(kirim,owner," Ready On ","" + str(" ("+team1+")"))
                                 line1.mentionWithDPK(kirim,owner," Ready On ","" + str(" ("+team2+")"))
                                 line2.mentionWithDPK(kirim,owner," Ready On ","" + str(" ("+team3+")"))
@@ -1395,7 +1395,7 @@ def LINE_FAST_USER(arif):
                                     family += str(wi) + ". " +cl.getContact(m_id).displayName + "\n"
                                 cl.sendText(kirim,"DPK FAMILY\n\nOwner:\n"+dpk+"\nAdmin:\n"+family+"\n( %s ) TEAM FAMILY" %(str(len(Owner)+len(Wait["Admin"]))))                                
 
-                        elif dpkText.lower() == "dpk join":
+                        elif dpkText.lower() == "max join":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 X = cl.getGroup(kirim)
                                 X.preventedJoinByTicket = False
@@ -1411,10 +1411,10 @@ def LINE_FAST_USER(arif):
                                 X.preventedJoinByTicket(X)
                                 cl.updateGroup(X)
 
-                        elif dpkText.lower() == "dpk bye":
+                        elif dpkText.lower() == "max bye":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 ginfo = cl.getGroup(kirim)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 line1.mentionWithDPK(kirim,owner," Oke ","\n Good Bye" + str(" ("+ginfo.name+")"))
                                 line3.leaveGroup(kirim)
                                 line2.leaveGroup(kirim)
@@ -1423,7 +1423,7 @@ def LINE_FAST_USER(arif):
                         elif dpkText.lower() == "bye me":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 ginfo = cl.getGroup(kirim)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 line1.mentionWithDPK(kirim,owner," Oke ","\n Good Bye" + str(" ("+ginfo.name+")"))
                                 cl.leaveGroup(kirim)
 
@@ -1897,7 +1897,7 @@ def LINE_FAST_USER(arif):
                                 else:
                                     cl.sendText(kirim, "Off not Going")
 
-                        elif dpkText.lower().startswith("mentionall"):
+                        elif dpkText.lower().startswith("gtag"):
                             if user in DpkFamily or user in Wait["Admin"]:
                                 gname = cl.getGroup(kirim)
                                 local = [contact.mid for contact in gname.members]
@@ -1975,7 +1975,7 @@ def LINE_FAST_USER(arif):
                             if user in DpkFamily or user in Wait["Admin"]:
                                 bc = msg.text.replace("Contactbc: ","")
                                 gid = cl.getAllContactIds()
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 for i in gid:
                                     cl.mentionWithDPK(i,owner," BROADCAST BY:","\n" + str(" ("+bc+")"))
 
@@ -2020,7 +2020,7 @@ def LINE_FAST_USER(arif):
                                 cll = cl.getProfile()
                                 cll.displayName = change
                                 cl.updateProfile(cll)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 cl.mentionWithDPK(kirim,owner," Update Name Success","\n Change to " + str(change))
 
                         elif "changebio: " in dpkText.lower():
