@@ -11,25 +11,25 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 print ("\n\n ---  WELCOME TO DPK FAMILY  ---\n")
 
 cl = LINE()
-#cl = LINE(authTokenDPK="EvoeHfOYgRrnGxtrKQOb.0PzLwS72Fl1EGGJMnIN3IW.Y4VNWohP0J/M6BypC/wyKkOPasr4ls1797ZO2stJBfI=")
+#cl = LINE(authTokenDPK="EvnPAfFxws9BeCPdxX95.4DANLenrmne5/CxD4zQP5q.LEmVz8wfIWBVPl7sM0IMoGikOY94z8UhrO3U6DLGIwo=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = LINEChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 line1 = LINE()
-#line1 = LINE(authTokenDPK="EvqOEGF1QuDXArLGq2Bf.zsjptOGse28bSLj1PuTA7W.d29LGyh7k9cNYtYcHto/SXIcvbKy2gD6OxI3XCLXunI=")
+#line1 = LINE(authTokenDPK="EvFHjYQjEoQVLtIZ3ZZ8.VsA2rcgs+TaVmXlFik1nUa.rtWSFzfHk+GZmfwYVzgFmecox5/mqwLhcOS0ekX+fBY=")
 line1.log("YOUR TOKEN : {}".format(str(line1.authToken)))
 channel = LINEChannel(line1,line1.server.CHANNEL_ID['LINE_TIMELINE'])
 line1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 line2 = LINE()
-#line2 = LINE(authTokenDPK="Evfq4VFstNLvdeOVQtC7.L9FHe7uzKTCG1RQIn1TiTW.eEOotTp+15b0y59j2wLw3j/CC3CtoVKMZirLZ3eLLaI=")
+#line2 = LINE(authTokenDPK="EvXdjRDueNBdXyaP4k14.8vNXuT169WbpTWNJ8x+aTa.YRFc6T3Dx53Win57FXGbtDmudw5FaoOC6GZOBHgQx5M=")
 line2.log("YOUR TOKEN : {}".format(str(line2.authToken)))
 channel = LINEChannel(line2,line2.server.CHANNEL_ID['LINE_TIMELINE'])
 line2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 line3 = LINE()
-#line3 = LINE(authTokenDPK="EvuOsxl4MC7Hqf6FZyse.ER7E8i7845TKzN3C6OKW3G.8Obsdur6aB5Iz7AwFMkw5/Hccd7z/NzNYinXv85veIY=")
+#line3 = LINE(authTokenDPK="Ev9bfFT0fdWaTdp47Rz5.iX+8Li1pxKmw9MdbgTos1q.bgIP1RGxSbiznAspJxRhnOnq4ZzzKxU2IJ7cPxW9byo=")
 line3.log("YOUR TOKEN : {}".format(str(line3.authToken)))
 channel = LINEChannel(line3,line3.server.CHANNEL_ID['LINE_TIMELINE'])
 line3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -102,8 +102,8 @@ Wait = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "ud296655acef67cbd5e8208e63629f78b":True,  #MID ADMIN
-        "u65224f4e8812136f01b25275a54b5aef":True
+        "u4862fe4b182b2fd194a3108e2f3662e8":True,  #MID ADMIN
+        "ue1d6a794435130d139f9c5dde19aa9e5":True
     },
 }
 
