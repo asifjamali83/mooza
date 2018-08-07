@@ -16,7 +16,7 @@ cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = LINEChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-print ("✍Ð₱₭ ฿Ø₮ LOGIN SUCCESS")
+print ("LOGIN SUCCESS")
 
 clProfile = cl.getProfile()
 clSettings = cl.getSettings()
@@ -25,7 +25,7 @@ LINE = LINEPoll(cl)
 Dpk = [cl]
 mid = cl.profile.mid
 DpkBot=[mid]
-Owner=["ud296655acef67cbd5e8208e63629f78b"]
+Owner=["u4862fe4b182b2fd194a3108e2f3662e8"]
 DpkFamily = DpkBot + Dpk + Owner
 
 contact = cl.getProfile()
@@ -38,7 +38,7 @@ Wait = {
     "UnsendPesan":False,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"ARIFISTIFIK",
+    "GName":"【さัএπัஞ✵ບิथℓℓҨतΩ】",
     "AutoRespon":True,
     "MentionText":"dîh ηgëtåg äķü mülü... Kămư kë§ëÞîåη ¥åk...???",
     "KickRespon":False,
@@ -55,12 +55,12 @@ Wait = {
     "ContactAdd":{},
     "autoBlock":False,
     "autoJoin":True,
-    "AutojoinTicket":False,
+    "AutojoinTicket":True,
     "AutoReject":False,
     "autoRead":False,
     "IDSticker":False,
     "Timeline":False,
-    "Welcome":False,
+    "Welcome":True,
     "BackupBot":True,
     "WcText": "Welcome My Friend",
     "Leave":False,
@@ -78,7 +78,7 @@ Wait = {
     "Ban":False,
     "Unban":False,
     "Admin": {
-        "ud296655acef67cbd5e8208e63629f78b":True #MID ADMIN
+        "u4862fe4b182b2fd194a3108e2f3662e8":True #MID ADMIN
     },
 }
 
@@ -134,9 +134,9 @@ DpkCctv={
 }
 
 Help ="""
-╔═══════════════════
-╠☬➣  MËÑÜ ĦÉĹP  ☬➣  ⏩⏩
-╠═══════════════════
+╔═════════════════
+╠☬➣  MËÑÜ ĦÉĹP
+╠═════════════════
 ╠☬➣me
 ╠☬➣my name
 ╠☬➣my bio
@@ -246,7 +246,7 @@ Help ="""
 ╠☬➣malaysia:
 ╠☬➣jawa:
 ╠═══════════════════
-╠☬➣  ✍Ð₱₭ ฿Ø₮₰ ⃟🇮🇩􏿿 ☬➣   ⏩
+╠☬➣【さัএπัஞ✵ບิथℓℓҨतΩ】
 ╚═══════════════════
 """""
 
@@ -812,9 +812,9 @@ def LINE_ARIF_USER(arif):
                         for target in targets:
                             try:
                                 cl.findAndAddContactsByMid(target)
-                                cl.createGroup("LINE SPAM GROUP",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
-                                cl.createGroup("LINE SPAM GROUP",[target]) # HANYA SPAM VIA CONTACT
-                                cl.createGroup("LINE SPAM GROUP",[target])
+                                cl.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cl.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target]) # HANYA SPAM VIA CONTACT
+                                cl.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target])
                                 cl.sendText(kirim,"Spam Invite ke " + korban + "\nSUCCESS..")
                                 Wait['SpamInvite'] = False
                             except:             
@@ -849,7 +849,7 @@ def LINE_ARIF_USER(arif):
                         elif dpkText.lower() == "me":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 cl.sendMessage(kirim, None, contentMetadata={'mid': user}, contentType=13)
-                                cl.mentionWithDPK(kirim,user," Hay","")
+                                cl.mentionWithDPK(kirim,user," Haii","")
 
                         elif dpkText.lower() == "help":
                             if user in DpkFamily or user in Wait["Admin"]:
@@ -858,7 +858,7 @@ def LINE_ARIF_USER(arif):
                         elif dpkText.lower() == "speed":
                             if user in DpkFamily or user in Wait["Admin"]:
                                 no = time.time()
-                                cl.sendText("u65224f4e8812136f01b25275a54b5aef", ' ')
+                                cl.sendText("ue86841a3982b7da6e8094f3c218d79b6", ' ')
                                 elapsed_time = time.time() - no
                                 cl.sendText(kirim, "%s" % (elapsed_time))
 
@@ -1406,7 +1406,7 @@ def LINE_ARIF_USER(arif):
                                 cll = cl.getProfile()
                                 cll.displayName = change
                                 cl.updateProfile(cll)
-                                owner = "ud296655acef67cbd5e8208e63629f78b"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 cl.mentionWithDPK(kirim,owner," Update Name Success","\n Change to " + str(change))
 
                         elif dpkText.lower().startswith("changebio: "):
