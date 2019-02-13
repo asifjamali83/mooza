@@ -757,9 +757,9 @@ def anulurk(to, wait):
 def anunanu(to,s,wait,j=''):
     try:
         if j == '':
-            data = {"messages": [{"type": "image","originalContentUrl": s,"previewImageUrl": s,"sentBy":{"label":"{}".format(client.getContact(clientMID).displayName),"iconUrl":"https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),"linkUrl":"line://ti/p/~melodic404"}}]}
+            data = {"messages": [{"type": "image","originalContentUrl": s,"previewImageUrl": s,"sentBy":{"label":"{}".format(client.getContact(clientMID).displayName),"iconUrl":"https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),"linkUrl":"line://ti/p/~botjgp00"}}]}
         else:
-            data = {"messages": [{"type": "image","originalContentUrl": s,"previewImageUrl": s,"animated":True,"extension":"gif","sentBy":{"label":"{}".format(client.getContact(clientMID).displayName),"iconUrl":"https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),"linkUrl":"line://ti/p/~melodic404"}}]}
+            data = {"messages": [{"type": "image","originalContentUrl": s,"previewImageUrl": s,"animated":True,"extension":"gif","sentBy":{"label":"{}".format(client.getContact(clientMID).displayName),"iconUrl":"https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),"linkUrl":"line://ti/p/~botjgp00"}}]}
         sendCarousel(to,data)
     except Exception as e:
         print(e)
@@ -865,7 +865,7 @@ def helpown():
     key = settings["keyCommand"]
     key = key.title()
     if settings['setKey'] == False: key = ''
-    helpOwn = "</> Noob Coder" + "\n\n" + \
+    helpOwn = "</> 「ᴮᴼᵀ ᴸᴵᴺᴱ ᴶᴳᴾ」" + "\n\n" + \
                   "Command's :" + "\n\n" + \
                   "Use「" + key + "」to Prefix" + "\n\n" + \
                   "" + key + "logout" + "\n" + \
@@ -1216,13 +1216,13 @@ async def clientBot(op):
                                         "type": "bubble",
                                             'styles': {
                                                 "header": {
-                                                    "backgroundColor": '#333333'
+                                                    "backgroundColor": '#000000'
                                                 },
                                                 "body": {
-                                                    "backgroundColor": '#333333'
+                                                    "backgroundColor": '#000000'
                                                 },
                                                 "footer": {
-                                                    "backgroundColor": '#333333'
+                                                    "backgroundColor": '#000000'
                                                 },
                                             },
                                         "header": {
@@ -1353,7 +1353,7 @@ async def clientBot(op):
                             "sentBy": {
                                 "label": "Detect Template",
                                 "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                "linkUrl": "line://ti/p/~melodic404"
+                                "linkUrl": "line://ti/p/~botjgp00"
                             }
                         }
                         sendTemplate(to, data)
@@ -1365,7 +1365,7 @@ async def clientBot(op):
                             "sentBy": {
                                 "label": "Detect Flex",
                                 "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                "linkUrl": "line://ti/p/~melodic404"
+                                "linkUrl": "line://ti/p/~botjgp00"
                             }
                         }
                         sendTemplate(to, data)
@@ -1602,64 +1602,64 @@ async def clientBot(op):
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "HELP COMMAND :",
+                                                "text": "คำสั่ง1 :",
                                                 "size": "lg",
                                                 "weight": "bold",
                                                 "align": "center",
-                                                "color": "#FFFFFF"
+                                                "color": "#81FF00"
                                             },
                                             {
                                                 "type": "text",
                                                 "text": "• Chatbot",
-                                                "color": "#FFFFFF",
+                                                "color": "#81FF00",
                                                 'flex': 1,
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Feature",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                 "type": "text",
                                                 "text": "• New",
-                                                "color": "#FFFFFF",
+                                                "color": "#81FF00",
                                                 'flex': 1,
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Profile",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                 "type": "text",
-                                                "text": "• Protect",
-                                                "color": "#FFFFFF",
+                                                "text": "• ป้องกัน",
+                                                "color": "#81FF00",
                                                 'flex': 1,
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Lurk",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                 "type": "text",
                                                 "text": "• Grouplist",
-                                                "color": "#FFFFFF",
+                                                "color": "#81FF00",
                                                 'flex': 1,
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Self",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Settings",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              }
                                         ]
@@ -1675,14 +1675,14 @@ async def clientBot(op):
                                                 "contents": [
                                                     {
                                                         "type": "icon",
-                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/05/bendera-indonesia-bulat-png.ico',
+                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/06/ธงประเทศไทย-png-4.png',
                                                         "size": "md"
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": "</> Noob Coder",
+                                                        "text": "</> 「ᴮᴼᵀ ᴸᴵᴺᴱ ᴶᴳᴾ」",
                                                         "align": "center",
-                                                        "color": "#FFFFFF",
+                                                        "color": "#81FF00",
                                                         "size": "md"
                                                     },
                                                     {
@@ -1708,64 +1708,64 @@ async def clientBot(op):
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "HELP COMMAND :",
+                                                "text": "คำสั่ง2 :",
                                                 "size": "lg",
                                                 "weight": "bold",
                                                 "align": "center",
-                                                "color": "#FFFFFF"
+                                                "color": "#81FF00"
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Banning",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Banning",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Friend",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Translate",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Memegen",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Kick",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Self",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Wordban",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Broadcast",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              }
                                         ]
@@ -1781,14 +1781,14 @@ async def clientBot(op):
                                                 "contents": [
                                                     {
                                                         "type": "icon",
-                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/05/bendera-indonesia-bulat-png.ico',
+                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/06/ธงประเทศไทย-png-4.png',
                                                         "size": "md"
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": "</> Noob Coder",
+                                                        "text": "</> 「ᴮᴼᵀ ᴸᴵᴺᴱ ᴶᴳᴾ」",
                                                         "align": "center",
-                                                        "color": "#FFFFFF",
+                                                        "color": "#81FF00",
                                                         "size": "md"
                                                     },
                                                     {
@@ -1814,64 +1814,64 @@ async def clientBot(op):
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "HELP COMMAND :",
+                                                "text": "คำสั่ง3 :",
                                                 "size": "lg",
                                                 "weight": "bold",
                                                 "align": "center",
-                                                "color": "#FFFFFF"
+                                                "color": "#81FF00"
                                             },
                                             {
                                                  "type": "text",
                                                 "text": "• Mention",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Group",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Steal",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• List",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Timeleft",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Leave",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Reboot",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• About",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              },
                                             {
                                                  "type": "text",
                                                 "text": "• Logout",
-                                                 "color": "#FFFFFF",
+                                                 "color": "#81FF00",
                                                  'flex': 1,
                                              }
                                         ]
@@ -1887,14 +1887,14 @@ async def clientBot(op):
                                                 "contents": [
                                                     {
                                                         "type": "icon",
-                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/05/bendera-indonesia-bulat-png.ico',
+                                                        "url": 'https://pngimage.net/wp-content/uploads/2018/06/ธงประเทศไทย-png-4.png',
                                                         "size": "md"
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": "</> Noob Coder",
+                                                        "text": "</> 「ᴮᴼᵀ ᴸᴵᴺᴱ ᴶᴳᴾ」",
                                                         "align": "center",
-                                                        "color": "#FFFFFF",
+                                                        "color": "#81FF00",
                                                         "size": "md"
                                                     },
                                                     {
@@ -1928,7 +1928,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -1946,13 +1946,13 @@ async def clientBot(op):
                                     "type": "bubble",
                                         'styles': {
                                             "header": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                             "body": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                             "footer": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                         },
                                     "header": {
@@ -1963,7 +1963,7 @@ async def clientBot(op):
                                                 "type": "text",
                                                 "text": "{}".format(contact.displayName),
                                                 "weight": "bold",
-                                                "color": "#FFFFFF",
+                                                "color": "#81FF00",
                                                 "size": "sm"
                                             }
                                         ]
@@ -1996,8 +1996,8 @@ async def clientBot(op):
                                                         "contents": [
                                                             {
                                                                 "type": "text",
-                                                                "text": "Name :",
-                                                                "color": "#FFFFFF",
+                                                                "text": "ชื่อกู :",
+                                                                "color": "#81FF00",
                                                                 "size": "sm",
                                                                 "flex": 0
                                                             },
@@ -2017,8 +2017,8 @@ async def clientBot(op):
                                                         "contents": [
                                                             {
                                                                 "type": "text",
-                                                                "text": "Status :",
-                                                                "color": "#FFFFFF",
+                                                                "text": "ตัสกู :",
+                                                                "color": "#81FF00",
                                                                 "size": "sm",
                                                                 "flex": 0
                                                             },
@@ -2047,8 +2047,8 @@ async def clientBot(op):
                                                 "height": "sm",
                                                 "action": {
                                                     "type": "uri",
-                                                    "label": "MyProfile",
-                                                    "uri": "line://app/1602687308-GXq4Vvk9?type=video&ocu={}&piu={}".format(LINKVIDEO,LINKFOTO)
+                                                    "label": "นี้กูเอง",
+                                                    "uri": "line://ti/p/~botjgp00"
                                                 }                                                   
                                             },
                                             {
@@ -2070,13 +2070,13 @@ async def clientBot(op):
                                     "type": "bubble",
                                         'styles': {
                                             "header": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                             "body": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                             "footer": {
-                                                "backgroundColor": '#333333'
+                                                "backgroundColor": '#000000'
                                             },
                                         },
                                     "body": {
@@ -2169,8 +2169,8 @@ async def clientBot(op):
                                                 "height": "sm",
                                                 "action": {
                                                     "type": "uri",
-                                                    "label": "Contact Person",
-                                                    "uri": "line://ti/p/~melodic404"
+                                                    "label": "กดตรงนี้สิ",
+                                                    "uri": "line://ti/p/~botjgp00"
                                                 }                                                   
                                             },
                                             {
@@ -2196,7 +2196,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -2216,7 +2216,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -2244,7 +2244,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -2264,7 +2264,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -2284,7 +2284,7 @@ async def clientBot(op):
                                             "size": "full",
                                             "action": {
                                                 "type": "uri",
-                                                "uri": "line://ti/p/~melodic404"
+                                                "uri": "line://ti/p/~botjgp00"
                                             }
                                         }
                                     ]
@@ -2327,7 +2327,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://ti/p/~melodic404"
+                                    "linkUrl": "line://ti/p/~botjgp00"
                                 }
                             }
                             sendTemplate(to, data)
@@ -2674,7 +2674,7 @@ async def clientBot(op):
                                         ret_ += "\n   {}".format(str(kaskus["link"]))
                                         client.sendImageWithURL(to, str(kaskus["img"]))
                                         client.sendMessage(to, str(ret_))
-                        elif cmd == "proteclist":
+                        elif cmd == "กลุ่มป้องกัน":
                                 ma = ""
                                 mb = ""
                                 md = ""
@@ -2706,7 +2706,7 @@ async def clientBot(op):
 #                                client.sendMessage(msg.to,"• PROTECTION •\n\n- Protect Url :\n"+ma+"\n- Protect Kick :\n"+mb+"\n- Protect Join :\n"+md+"\n- Protect Invite :\n"+me+"\nTotal「%s」Protect" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectinvite))))
                                 client.generateReplyMessage(msg.id)
                                 client.sendReplyMessage(msg.id, to,"• PROTECTION •\n\n- Protect Url :\n"+ma+"\n- ProtectKick :\n"+mb+"\n- Protect Join :\n"+md+"\n- Protect Invite :\n"+me+"\nTotal「%s」Protect" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectinvite))))
-                        elif cmd.startswith("prokick "):
+                        elif cmd.startswith("กันเตะ"):
                             text = removeCmd("prokick", text)
                             spl = text.replace('prokick ', text)
                             if spl == 'on':
@@ -2715,17 +2715,17 @@ async def clientBot(op):
                                 else:
                                      protectkick.append(msg.to)
                                      ginfo = client.getGroup(msg.to)
-                                     msgs = "Protect kick Has been On\nIn Group : " +str(ginfo.name)
+                                     msgs = "เปิดระบบกันคนบิน\nIn Group : " +str(ginfo.name)
                                 client.sendMessage(msg.to, "「 Enabled 」\n" + msgs)
                             elif spl == 'off':
                                   if msg.to in protectkick:
                                        protectkick.remove(msg.to)
                                        ginfo = client.getGroup(msg.to)
-                                       msgs = "Protect kick Has been Off\nIn Group : " +str(ginfo.name)
+                                       msgs = "ปิดระบบกันคนบิน Off\nIn Group : " +str(ginfo.name)
                                   else:
                                        msgs = "Protect kick Already Off"
                                   client.sendMessage(msg.to, "「Disabled 」\n" + msgs)
-                        elif cmd.startswith("proinv "):
+                        elif cmd.startswith("กันเชิญ"):
                             text = removeCmd("proinv", text)
                             spl = text.replace('proinv ', text)
                             if spl == 'on':
@@ -2734,17 +2734,17 @@ async def clientBot(op):
                                 else:
                                      protectinvite.append(msg.to)
                                      ginfo = client.getGroup(msg.to)
-                                     msgs = "Protect invite Has been On\nIn Group : " +str(ginfo.name)
+                                     msgs = "เปิดระบบกันคนดึงกลุ่ม\nIn Group : " +str(ginfo.name)
                                 client.sendMessage(msg.to, "「 Enabled 」\n" + msgs)
                             elif spl == 'off':
                                   if msg.to in protectinvite:
                                        protectinvite.remove(msg.to)
                                        ginfo = client.getGroup(msg.to)
-                                       msgs = "Protect invite Has been On\nIn Group : " +str(ginfo.name)
+                                       msgs = "ปิดระบบกันคนดึงกลุ่ม\nIn Group : " +str(ginfo.name)
                                   else:
                                        msgs = "Protect invite Has been Off"
                                   client.sendMessage(msg.to, "「Disabled 」\n" + msgs)                                    
-                        elif cmd.startswith("projoin "):
+                        elif cmd.startswith("กันเข้า"):
                             text = removeCmd("projoin", text)
                             spl = text.replace('projoin ', text)
                             if spl == 'on':
@@ -2753,13 +2753,13 @@ async def clientBot(op):
                                 else:
                                      protectjoin.append(msg.to)
                                      ginfo = client.getGroup(msg.to)
-                                     msgs = "Protect join Has Been On\nIn Group : " +str(ginfo.name)
+                                     msgs = "เปิดระบบห้ามคนนอกเข้ากลุ่ม\nIn Group : " +str(ginfo.name)
                                 client.sendMessage(msg.to, "「 Enabled 」\n" + msgs)
                             elif spl == 'off':
                                   if msg.to in protectjoin:
                                        protectjoin.remove(msg.to)
                                        ginfo = client.getGroup(msg.to)
-                                       msgs = "Protect join Has Been Off\nIn Group : " +str(ginfo.name)
+                                       msgs = "ปิดระบบห้ามคนนอกเข้ากลุ่ม\nIn Group : " +str(ginfo.name)
                                   else:
                                        msgs = "Protect join Alredy Off"
                                   client.sendMessage(msg.to, "「 Disabled 」\n" + msgs)
@@ -2791,7 +2791,7 @@ async def clientBot(op):
                             client.blockContact(user)
                             client.generateReplyMessage(msg.id)
                             client.sendReplyMessage(msg.id,to, "Success Block Contact.")
-                        elif cmd.startswith("proqr "):
+                        elif cmd.startswith("กันลิ้ง"):
                             text = removeCmd("proqr", text)
                             spl = text.replace('proqr ', text)
                             if spl == 'on':
@@ -2800,17 +2800,17 @@ async def clientBot(op):
                                 else:
                                      protectqr.append(msg.to)
                                      ginfo = client.getGroup(msg.to)
-                                     msgs = "Protect Qr Has Been On\nIn Group : " +str(ginfo.name)
+                                     msgs = "เปิดระบบห้ามเปิดลิ้ง\nIn Group : " +str(ginfo.name)
                                 client.sendMessage(msg.to, "「 Enabled 」\n" + msgs)
                             elif spl == 'off':
                                   if msg.to in protectqr:
                                        protectqr.remove(msg.to)
                                        ginfo = client.getGroup(msg.to)
-                                       msgs = "Protect Qr Has Been Off\nIn Group : " +str(ginfo.name)
+                                       msgs = "ปิดระบบห้ามเปิดลิ้ง\nIn Group : " +str(ginfo.name)
                                   else:
                                        msgs = "Protect Qr Alredy Off"
                                   client.sendMessage(msg.to, "「 Disabled 」\n" + msgs)
-                        elif cmd.startswith("protectall "):
+                        elif cmd.startswith("ทั้งหมด"):
                             text = removeCmd("protectall", text)
                             spl = text.replace('protectall  ', text)
                             if spl == 'on':
@@ -3522,14 +3522,14 @@ async def clientBot(op):
                                 }
                             }
                             sendTemplate(to, data)
-                        elif cmd == "protect":
-                            ret = "Type: Protection\n\n"
-                            ret += "  • Prokick On/Off\n"
-                            ret += "  • Projoin On/Off\n"
-                            ret += "  • Proinv On/Off\n"
-                            ret += "  • Proqr On/Off\n"
-                            ret += "  • Protectall On/Off\n"
-                            ret += "  • Proteclist"
+                        elif cmd == "ป้องกัน":
+                            ret = "ระบบป้องกันกลุ่ม\n\n"
+                            ret += "  • กันเตะ On/Off\n"
+                            ret += "  • กันเข้า On/Off\n"
+                            ret += "  • กันเชิญ On/Off\n"
+                            ret += "  • กันลิ้ง On/Off\n"
+                            ret += "  • ทั้งหมด On/Off\n"
+                            ret += "  • กลุ่มป้องกัน"
                             hello = "{}".format(str(ret))
                             data = {
                                 "type": "text",
@@ -3850,7 +3850,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://ti/p/~melodic404"
+                                    "linkUrl": "line://ti/p/~botjgp00"
                                 }
                             }
                             sendTemplate(to, data)
@@ -3871,7 +3871,7 @@ async def clientBot(op):
                                 "sentBy": {
                                     "label": "{}".format(client.getContact(clientMID).displayName),
                                     "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                    "linkUrl": "line://ti/p/~melodic404"
+                                    "linkUrl": "line://ti/p/~botjgp00"
                                 }
                             }
                             sendTemplate(to, data)
@@ -4276,7 +4276,7 @@ async def clientBot(op):
                                     "sentBy": {
                                         "label": "{}".format(client.getContact(clientMID).displayName),
                                         "iconUrl": "https://obs.line-scdn.net/{}".format(client.getContact(clientMID).pictureStatus),
-                                        "linkUrl": "line://ti/p/~melodic404"
+                                        "linkUrl": "line://ti/p/~botjgp00"
                                     }
                                 }
                                 bcTemplate(gr, data)
@@ -4617,7 +4617,7 @@ async def clientBot(op):
                                             }
                                         }
                                         sendTemplate(to, data)
-                        elif cmd.startswith("youtubesearch"):
+                        elif cmd.startswith("ยูทูป"):
                             sep = text.split(" ")
                             search = text.replace(sep[0] + " ","")
                             r = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q={}&type=video&key=AIzaSyAF-_5PLCt8DwhYc7LBskesUnsm1gFHSP8".format(str(search)))
@@ -4631,17 +4631,17 @@ async def clientBot(op):
                                         "type": "bubble",
                                         "styles": {
                                             "header": {
-                                                "backgroundColor": "#ffffff"
+                                                "backgroundColor": "#000000"
                                             },
                                             "body": {
-                                               "backgroundColor": "#ffffff",
+                                               "backgroundColor": "#000000",
                                                "separator": True,
-                                               "separatorColor": "#000000"
+                                               "separatorColor": "#FF0C00"
                                             },
                                             "footer": {
-                                                "backgroundColor": "#ffffff",
+                                                "backgroundColor": "#000000",
                                                 "separator": True,
-                                               "separatorColor": "#000000"
+                                               "separatorColor": "#FF0C00"
                                            }
                                         },
                                         "header": {
@@ -4652,7 +4652,7 @@ async def clientBot(op):
                                                     "type": "text",
                                                     "text": "Youtube",
                                                     "weight": "bold",
-                                                    "color": "#1C1C1C",
+                                                    "color": "#FF0C00",
                                                     "size": "sm"
                                                 }
                                             ]
@@ -4726,7 +4726,7 @@ async def clientBot(op):
                                                     "type": "button",
                                                     "flex": 2,
                                                     "style": "primary",
-                                                    "color": "#000000",
+                                                    "color": "#ff000b",
                                                     "height": "sm",
                                                     "action": {
                                                         "type": "uri",
@@ -4738,7 +4738,7 @@ async def clientBot(op):
                                                     "type": "button",
                                                     "margin": "sm",
                                                     "style": "primary",
-                                                    "color": "#000000",
+                                                    "color": "#ff000d",
                                                     "height": "sm",
                                                     "action": {
                                                         "type": "uri",
@@ -4750,7 +4750,7 @@ async def clientBot(op):
                                                 "type": "button",
                                                 "margin": "sm",
                                                 "style": "primary",
-                                                "color": "#000000",
+                                                "color": "#FF000D",
                                                 "height": "sm",
                                                 "action": {
                                                     "type": "uri",
@@ -4816,7 +4816,7 @@ async def clientBot(op):
                                 group = groups[int(number)-1]
                                 G = client.getGroup(group)
                                 ret_ = []
-                                ret_.append({"imageUrl":"https://thumbs.gfycat.com/QuaintScornfulAmericanlobster-small.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
+                                ret_.append({"imageUrl":"https://thumbs.gfycat.com/QuaintScornfulAmericanlobster-small.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
                                 k = len(ret_)//1
                                 for aa in range(k+1):
                                     data = {
@@ -4835,7 +4835,7 @@ async def clientBot(op):
                                 group = groups[int(number)-1]
                                 G = client.getGroup(group)
                                 ret_ = []
-                                ret_.append({"imageUrl":"https://thumbs.gfycat.com/QuaintScornfulAmericanlobster-small.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
+                                ret_.append({"imageUrl":"https://thumbs.gfycat.com/QuaintScornfulAmericanlobster-small.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
                                 k = len(ret_)//1
                                 for aa in range(k+1):
                                     data = {
@@ -4854,13 +4854,13 @@ async def clientBot(op):
                                 group = groups[int(number)-1]
                                 G = client.getGroup(group)
                                 ret_ = []
-                                ret_.append({"imageUrl":"https://techflourish.com/images/book-clipart-gif-9.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://i.pinimg.com/originals/a1/9a/39/a19a390f4a46f098eec1c8070001b5ad.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://4.bp.blogspot.com/-MifM_HCQjAE/Wnkgxjj-pcI/AAAAAAALEdg/ObmxB3z9aW8DXfVnjwTCUNooO3LfgDsSQCLcBGAs/s1600/AS003630_02.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://media.giphy.com/media/fvOKZ1hETl5L2/giphy.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://steamusercontent-a.akamaihd.net/ugc/269469010840327100/309EC530780F049E3FAC757C4B2A75A008D2667E/","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://media.giphy.com/media/lnd8s1O9mV61O/giphy.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
-                                ret_.append({"imageUrl":"https://s.kaskus.id/images/2013/06/05/5534212_20130605075951.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~melodic404"}})
+                                ret_.append({"imageUrl":"https://techflourish.com/images/book-clipart-gif-9.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://i.pinimg.com/originals/a1/9a/39/a19a390f4a46f098eec1c8070001b5ad.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://4.bp.blogspot.com/-MifM_HCQjAE/Wnkgxjj-pcI/AAAAAAALEdg/ObmxB3z9aW8DXfVnjwTCUNooO3LfgDsSQCLcBGAs/s1600/AS003630_02.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://media.giphy.com/media/fvOKZ1hETl5L2/giphy.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://steamusercontent-a.akamaihd.net/ugc/269469010840327100/309EC530780F049E3FAC757C4B2A75A008D2667E/","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://media.giphy.com/media/lnd8s1O9mV61O/giphy.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
+                                ret_.append({"imageUrl":"https://s.kaskus.id/images/2013/06/05/5534212_20130605075951.gif","size": "full","action": {"type": "uri","uri": "line://ti/p/~botjgp00"}})
                                 k = len(ret_)//5
                                 for aa in range(k+1):
                                     data = {
