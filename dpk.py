@@ -16,23 +16,6 @@ cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = LINEChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-line1 = LINE()
-#line1 = LINE(authTokenDPK="EvqOEGF1QuDXArLGq2Bf.zsjptOGse28bSLj1PuTA7W.d29LGyh7k9cNYtYcHto/SXIcvbKy2gD6OxI3XCLXunI=")
-line1.log("YOUR TOKEN : {}".format(str(line1.authToken)))
-channel = LINEChannel(line1,line1.server.CHANNEL_ID['LINE_TIMELINE'])
-line1.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
-
-line2 = LINE()
-#line2 = LINE(authTokenDPK="Evfq4VFstNLvdeOVQtC7.L9FHe7uzKTCG1RQIn1TiTW.eEOotTp+15b0y59j2wLw3j/CC3CtoVKMZirLZ3eLLaI=")
-line2.log("YOUR TOKEN : {}".format(str(line2.authToken)))
-channel = LINEChannel(line2,line2.server.CHANNEL_ID['LINE_TIMELINE'])
-line2.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
-
-line3 = LINE()
-#line3 = LINE(authTokenDPK="EvuOsxl4MC7Hqf6FZyse.ER7E8i7845TKzN3C6OKW3G.8Obsdur6aB5Iz7AwFMkw5/Hccd7z/NzNYinXv85veIY=")
-line3.log("YOUR TOKEN : {}".format(str(line3.authToken)))
-channel = LINEChannel(line3,line3.server.CHANNEL_ID['LINE_TIMELINE'])
-line3.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
 print ("DPK LOGIN SUCCESS ")
 
@@ -40,12 +23,9 @@ clProfile = cl.getProfile()
 clSettings = cl.getSettings()
 LINE = LINEPoll(cl)
 
-Dpk = [cl,line1,line2,line3]
+Dpk = [cl]
 mid = cl.profile.mid
-Amid = line1.profile.mid
-Bmid = line2.profile.mid
-Cmid = line3.profile.mid
-DpkBot=[mid,Amid,Bmid,Cmid]
+DpkBot=[mid]
 Owner=["u4862fe4b182b2fd194a3108e2f3662e8","ue1d6a794435130d139f9c5dde19aa9e5"]
 DpkFamily = DpkBot + Dpk + Owner
 
@@ -71,18 +51,18 @@ Wait = {
     "Steal":False,
     "Invite":False,
     "Copy":False,
-    "autoAdd":True,
+    "autoAdd":False,
     "PesanAdd":"Terima Kasih Sudah Add Saya",
     "ContactAdd":{},
     "autoBlock":False,
-    "autoJoin":True,
-    "AutojoinTicket":True,
+    "autoJoin":False,
+    "AutojoinTicket":False,
     "AutoReject":True,
     "autoRead":False,
     "IDSticker":False,
     "Timeline":False,
-    "Welcome":True,
-    "BackupBot":True,
+    "Welcome":False,
+    "BackupBot":False,
     "WcText": "Welcome My Friend",
     "Leave":False,
     "WvText": "See You My Friend",
@@ -98,10 +78,10 @@ Wait = {
     "Blacklist":{},
     "Ban":False,
     "Unban":False,
-    "AddMention":True,
+    "AddMention":False,
     "Admin": {
         "ue1d6a794435130d139f9c5dde19aa9e5":True,  #MID ADMIN
-        "u4862fe4b182b2fd194a3108e2f3662e8":True
+        "ue83dcf30633e63bd39b2fa25564d3ce8":True
     },
 }
 
@@ -2147,27 +2127,27 @@ def LINE_FAST_USER(arif):
                                 ret_ += "\n\nTOTAL {} GRUP JOIN".format(str(len(groups)))
                                 line3.sendText(kirim, str(ret_))
 
-                        elif dpkText.lower().startswith("rejectall grup"):
+                        elif dpkText.lower().startswith("re"):
                             if user in DpkFamily or user in Wait["Admin"]:
                                 ginvited = cl.getGroupIdsInvited()
-                                ginvited = line1.getGroupIdsInvited()
-                                ginvited = line2.getGroupIdsInvited()
-                                ginvited = line3.getGroupIdsInvited()
+                                #ginvited = line1.getGroupIdsInvited()
+                                #ginvited = line2.getGroupIdsInvited()
+                                #ginvited = line3.getGroupIdsInvited()
                                 if ginvited != [] and ginvited != None:
                                     for gid in ginvited:
                                         cl.rejectGroupInvitation(gid)
-                                        line1.rejectGroupInvitation(gid)
-                                        line2.rejectGroupInvitation(gid)
-                                        line3.rejectGroupInvitation(gid)
+                                       # line1.rejectGroupInvitation(gid)
+                                        #line2.rejectGroupInvitation(gid)
+                                        #line3.rejectGroupInvitation(gid)
                                     cl.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
-                                    line1.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
-                                    line2.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
-                                    line3.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
+                                    #line1.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
+                                    #line2.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
+                                    #line3.sendMessage(kirim, "Succes Cancell {} Invite Grup".format(str(len(ginvited))))
                                 else:
                                     cl.sendMessage(kirim, "Nothing Invited")
-                                    line1.sendMessage(kirim, "Nothing Invited")
-                                    line2.sendMessage(kirim, "Nothing Invited")
-                                    line3.sendMessage(kirim, "Nothing Invited")
+                                    #line1.sendMessage(kirim, "Nothing Invited")
+                                    #line2.sendMessage(kirim, "Nothing Invited")
+                                    #line3.sendMessage(kirim, "Nothing Invited")
 
                         elif dpkText.lower() == 'status':
                             if user in DpkFamily or user in Wait["Admin"]:
@@ -2687,208 +2667,8 @@ def LINE_FAST_USER(arif):
                                     cl.sendImageWithURL(kirim, cover)
                                     cl.mentionWithDPK(kirim,conn.mid,"Tag User\n","")
 
-                        elif 'say-id: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:i
-                                   # isi = dpkText.lower().replace('say-id: ','')
-                                    tts = gTTS(text=isi, lang='id', slow=False)
-                                    tts.save('temp.mp3')
-                                    cl.sendAudio(kirim, 'temp.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-                                    
-                        elif 'say-en: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                 #   isi = dpkText.lower().replace('say-en: ','')
-                                    tts = gTTS(text=isi, lang='en', slow=False)
-                                    tts.save('temp.mp3')
-                                    cl.sendAudio(kirim, 'temp.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif 'say-jp: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                  #  isi = dpkText.lower().replace('say-jp: ','')
-                                    tts = gTTS(text=isi, lang='ja', slow=False)
-                                    tts.save('temp.mp3')
-                                    cl.sendAudio(kirim, 'temp.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif 'say-ar: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                              #      isi = dpkText.lower().replace('say-ar: ','')
-                                    tts = gTTS(text=isi, lang='ar', slow=False)
-                                    tts.save('temp.mp3')
-                                    cl.sendAudio(kirim, 'temp.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif 'say-ko: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                            #        isi = dpkText.lower().replace('say-ko: ','')
-                                    tts = gTTS(text=isi, lang='ko', slow=False)
-                                    tts.save('temp.mp3')
-                                    cl.sendAudio(kirim, 'temp.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif 'apakah: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                    txt = ['iya','tidak','bisa jadi','mungkin saja','tidak mungkin','au ah gelap']
-                                    isi = random.choice(txt)
-                                    tts = gTTS(text=isi, lang='id', slow=False)
-                                    tts.save('temp2.mp3')
-                                    cl.sendAudio(kirim, 'temp2.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif 'kapan: ' in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                    txt = ['kapan kapan','besok','satu abad lagi','Hari ini','Tahun depan','Minggu depan','Bulan depan','Sebentar lagi']
-                                    isi = random.choice(txt)
-                                    tts = gTTS(text=isi, lang='id', slow=False)
-                                    tts.save('temp2.mp3')
-                                    cl.sendAudio(kirim, 'temp2.mp3')
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-                        elif "Wikipedia: " in dpkText:
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                    wiki = dpkText.lower().replace("Wikipedia: ","")
-                                    wikipedia.set_lang("id")
-                                    pesan="Title ("
-                                    pesan+=wikipedia.page(wiki).title
-                                    pesan+=")\n\n"
-                                    pesan+=wikipedia.summary(wiki, sentences=1)
-                                    pesan+="\n"
-                                    pesan+=wikipedia.page(wiki).url
-                                    cl.sendText(kirim, pesan)
-                                except:
-                                    try:
-                                        pesan="Over Text Limit! Please Click link\n"
-                                        pesan+=wikipedia.page(wiki).url
-                                        cl.sendText(kirim, pesan)
-                                    except Exception as e:
-                                        cl.sendText(kirim, str(e))
-
-                        elif dpkText.lower() == 'kalender':
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                tz = pytz.timezone("Asia/Makassar")
-                                timeNow = datetime.now(tz=tz)
-                                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                                hr = timeNow.strftime("%A")
-                                bln = timeNow.strftime("%m")
-                                for i in range(len(day)):
-                                    if hr == day[i]: hasil = hari[i]
-                                for k in range(0, len(bulan)):
-                                    if bln == str(k): bln = bulan[k-1]
-                                readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-                                cl.sendMessage(kirim, readTime)
-
-                        elif "gambar: " in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                    query = dpkText.replace("gambar: ", "")
-                                    query = query.replace(" ", "+")
-                                    gambar = cl.download_image(query)
-                                    cl.sendImageWithURL(kirim, gambar)
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))                                    
-
-                        elif "youtube: " in dpkText.lower():
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                try:
-                                    query = dpkText.replace("youtube: ", "")
-                                    query = query.replace(" ", "+")
-                                    x = cl.youtube(query)
-                                    cl.sendText(kirim, x)
-                                except Exception as e:
-                                    cl.sendText(kirim, str(e))
-
-#--------------------------------- TRANSLATOR -------------------------------------------------#
-
-                        elif dpkText.lower().startswith("indonesian: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='id')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Indonesian\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("english: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='en')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator English\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("korea: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                    sep = dpkText.split(" ")
-                                    isi = dpkText.replace(sep[0] + " ","")
-                                    translator = Translator()
-                                    hasil = translator.translate(isi, dest='ko')
-                                    text = hasil.text
-                                    cl.sendMessage(kirim, "Translator Korea\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("japan: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='ja')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Japan\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("thailand: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='th')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Thailand\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("arab: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='ar')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Saudi Arabia\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("malaysia: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='ms')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Malaysia\n\n" + str(text))
-
-                        elif dpkText.lower().startswith("jawa: "):
-                            if user in DpkFamily or user in Wait["Admin"]:
-                                sep = dpkText.split(" ")
-                                isi = dpkText.replace(sep[0] + " ","")
-                                translator = Translator()
-                                hasil = translator.translate(isi, dest='jw')
-                                text = hasil.text
-                                cl.sendMessage(kirim, "Translator Jawa\n\n" + str(text))
-
+                        
+                                
     except Exception as error:
         print (error)
 
